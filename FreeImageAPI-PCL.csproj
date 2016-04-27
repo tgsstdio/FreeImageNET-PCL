@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{30E16C50-498F-4E07-AFB5-084FB43F0228}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FreeImageAPI</RootNamespace>
+    <AssemblyName>FreeImageAPI-PCL</AssemblyName>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\FreeImageEngine.cs" />
+    <Compile Include="Classes\FreeImagePlugin.cs" />
+    <Compile Include="Classes\FreeImageStreamIO.cs" />
+    <Compile Include="Classes\GifInformation.cs" />
+    <Compile Include="Classes\ImageMetadata.cs" />
+    <Compile Include="Classes\LocalPlugin.cs" />
+    <Compile Include="Classes\MemoryArray.cs" />
+    <Compile Include="Classes\MetadataModel.cs" />
+    <Compile Include="Classes\MetadataModels.cs" />
+    <Compile Include="Classes\MetadataTag.cs" />
+    <Compile Include="Classes\Palette.cs" />
+    <Compile Include="Classes\PluginRepository.cs" />
+    <Compile Include="Classes\Scanline.cs" />
+    <Compile Include="Classes\StreamWrapper.cs" />
+    <Compile Include="Enumerations\DisposalMethodType.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_COLOR_CHANNEL.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_COLOR_DEPTH.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_COLOR_OPTIONS.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_COLOR_TYPE.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_COMPARE_FLAGS.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_DITHER.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_FILTER.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_FORMAT.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_JPEG_OPERATION.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_LOAD_FLAGS.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_MDMODEL.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_MDTYPE.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_METADATA_COPY.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_QUANTIZE.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_SAVE_FLAGS.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_TMO.cs" />
+    <Compile Include="Enumerations\FREE_IMAGE_TYPE.cs" />
+    <Compile Include="Enumerations\ICC_FLAGS.cs" />
+    <Compile Include="Enumerations\MD_SEARCH_FLAGS.cs" />
+    <Compile Include="Structs\BITMAP.cs" />
+    <Compile Include="Structs\BITMAPINFO.cs" />
+    <Compile Include="Structs\BITMAPINFOHEADER.cs" />
+    <Compile Include="Structs\FI16RGB555.cs" />
+    <Compile Include="Structs\FI16RGB565.cs" />
+    <Compile Include="Structs\FI1BIT.cs" />
+    <Compile Include="Structs\FI4BIT.cs" />
+    <Compile Include="Structs\FIBITMAP.cs" />
+    <Compile Include="Structs\FICOMPLEX.cs" />
+    <Compile Include="Structs\FIICCPROFILE.cs" />
+    <Compile Include="Structs\FIMEMORY.cs" />
+    <Compile Include="Structs\FIMETADATA.cs" />
+    <Compile Include="Structs\FIMULTIBITMAP.cs" />
+    <Compile Include="Structs\FIRational.cs" />
+    <Compile Include="Structs\FIRGB16.cs" />
+    <Compile Include="Structs\FIRGBA16.cs" />
+    <Compile Include="Structs\FIRGBAF.cs" />
+    <Compile Include="Structs\FIRGBF.cs" />
+    <Compile Include="Structs\FITAG.cs" />
+    <Compile Include="Structs\FIURational.cs" />
+    <Compile Include="Structs\fi_handle.cs" />
+    <Compile Include="Structs\FreeImageIO.cs" />
+    <Compile Include="Structs\Plugin.cs" />
+    <Compile Include="Structs\RGBQUAD.cs" />
+    <Compile Include="Structs\RGBTRIPLE.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="FreeImageStaticImports.cs" />
+    <Compile Include="FreeImageWrapper.cs" />
+    <Compile Include="Color.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
