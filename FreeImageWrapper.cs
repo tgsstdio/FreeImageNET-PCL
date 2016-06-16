@@ -119,27 +119,7 @@ namespace FreeImageAPI
 		{
 			if (WrapperVersion == null)
 			{
-				try
-				{
-					var firstAttr = (typeof(FreeImage)).GetTypeInfo().Assembly
-						.GetCustomAttribute(typeof(AssemblyFileVersionAttribute));
-
-					if (firstAttr != null)
-					{
-						AssemblyFileVersionAttribute attribute =
-							firstAttr as AssemblyFileVersionAttribute;
-						if ((attribute != null) && (attribute.Version != null))
-						{
-							return (WrapperVersion = new Version(attribute.Version));
-						}
-					}
-				}
-				catch
-				{
-
-				}
-
-				WrapperVersion = new Version("");
+				WrapperVersion = new Version("3.17.0");
 			}
 
 			return WrapperVersion;
