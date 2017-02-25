@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("FreeImageAPI-PCL")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription("Modified version of FreeImage.NET v3.17.0 wrapper as Portable Core library (PCL)")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("")]
+[assembly: AssemblyCopyright("Copyright 2017 David Young")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

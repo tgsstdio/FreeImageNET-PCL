@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FreeImageNET-PCL</id>
+    <version>3.17.0</version>
+    <authors>David Young</authors>
+    <owners>David Young</owners>
+    <licenseUrl>https://github.com/tgsstdio/Mg/blob/master/license-fi.txt</licenseUrl>
+    <projectUrl>https://github.com/tgsstdio/FreeImageNET-PCL/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Modified version of FreeImage.NET v3.17.0 wrapper as Portable Core library (PCL) and .NET 4.5 assembly</description>
+    <releaseNotes>Initial release PCL Profile111</releaseNotes>
+    <copyright>Copyright 2017 David Young</copyright>
+    <tags>freeimage pcl wrapper</tags>    
+  </metadata>
+</package>
